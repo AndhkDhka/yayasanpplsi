@@ -1,0 +1,232 @@
+/* ============================================================
+   SITE NAVBAR — single source of truth for header styling.
+
+   IMPORTANT: this file is intentionally self-contained and does
+   NOT rely on Tailwind utility classes (e.g. lg:grid, lg:hidden,
+   top-4, z-50, py-4, shadow-2xl, top-24, z-[9999]...). The
+   compiled assets/css/style.css in this project is a purged
+   Tailwind build that is MISSING those exact utilities, which
+   was the real root cause of "desktop menu disappeared" /
+   "mobile bar never hides on desktop" / "logo breaks" bugs.
+   Keeping the navbar's layout logic here, in plain CSS, means
+   it keeps working correctly no matter what Tailwind build
+   state style.css is in.
+   ============================================================ */
+
+:root {
+  --nav-height: 76px;
+  --nav-offset-top: 16px;
+  --nav-maroon: #7c1f1f;
+  --nav-gold: #f2c9a0;
+}
+
+/* ---------- Outer fixed strip (centers the pill) ---------- */
+.site-navbar {
+  position: fixed;
+  top: var(--nav-offset-top);
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
+  pointer-events: none; /* only the pill itself is interactive */
+}
+
+.site-navbar * {
+  pointer-events: auto;
+}
+
+/* ---------- The pill / glass bar ---------- */
+#glass-container {
+  width: 100%;
+  max-width: 1200px;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 9999px;
+  background: transparent;
+  transition: background-color .35s ease, box-shadow .35s ease;
+}
+
+#glass-container.scrolled {
+  background: var(--nav-maroon);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+}
+
+/* ---------- Desktop layout: 3 columns, logo perfectly centered ---------- */
+.site-navbar__desktop {
+  display: none; /* switched to grid at >=1024px, see media query below */
+  width: 100%;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.site-navbar__col {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.site-navbar__col--right {
+  justify-content: flex-end;
+}
+
+.site-navbar__col a,
+.site-navbar__mobile-bar a {
+  color: #fff;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.site-navbar__col a:hover {
+  color: var(--nav-gold);
+}
+
+.site-navbar__col a.nav-active {
+  color: var(--nav-gold) !important;
+}
+
+/* Centered logo lockup (shared by desktop + mobile) */
+.site-navbar__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-decoration: none;
+  flex-shrink: 0;
+  min-width: 0;
+}
+
+.site-navbar__logo img {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.site-navbar__logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+  text-align: left;
+}
+
+.site-navbar__logo-text strong {
+  color: #fff;
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+
+.site-navbar__logo-text small {
+  color: #fff;
+  font-size: .75rem;
+}
+
+/* ---------- Mobile bar: logo left, hamburger right ---------- */
+.site-navbar__mobile-bar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-navbar__logo--sm img {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+}
+
+.site-navbar__logo--sm .site-navbar__logo-text strong {
+  font-size: 1.125rem;
+}
+
+.site-navbar__toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 4px;
+  color: #fff;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.site-navbar__toggle svg {
+  width: 28px;
+  height: 28px;
+}
+
+.site-navbar__icon--hidden {
+  display: none;
+}
+
+/* ---------- Mobile dropdown menu ---------- */
+#mobile-menu {
+  position: fixed;
+  top: calc(var(--nav-offset-top) + var(--nav-height) + 10px);
+  left: 16px;
+  right: 16px;
+  z-index: 999;
+  background: var(--nav-maroon);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, .3);
+  transform-origin: top center;
+  animation: navMenuDown .25s ease;
+}
+
+#mobile-menu[hidden] {
+  display: none;
+}
+
+#mobile-menu a {
+  display: block;
+  padding: 16px 22px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+  transition: background-color .2s ease, color .2s ease;
+}
+
+#mobile-menu a:last-child {
+  border-bottom: none;
+}
+
+#mobile-menu a:hover {
+  background: rgba(255, 255, 255, .08);
+  color: var(--nav-gold);
+}
+
+@keyframes navMenuDown {
+  from { opacity: 0; transform: translateY(-12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #mobile-menu { animation: none; }
+  #glass-container { transition: none; }
+}
+
+/* ---------- Breakpoint: swap bar layouts at 1024px ---------- */
+@media (min-width: 1024px) {
+  .site-navbar__desktop {
+    display: grid;
+  }
+  .site-navbar__mobile-bar,
+  #mobile-menu {
+    display: none !important;
+  }
+}

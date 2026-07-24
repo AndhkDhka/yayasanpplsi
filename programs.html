@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs - Yayasan PPLSI</title>
+    <meta name="description" content="Unit layanan, program unggulan, fasilitas, dan profil lulusan yang dikembangkan oleh Yayasan PPLSI.">
+    <link rel="canonical" href="https://example.com/programs.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Programs - Yayasan PPLSI">
+    <meta property="og:description" content="Unit layanan, program unggulan, fasilitas, dan profil lulusan yang dikembangkan oleh Yayasan PPLSI.">
+    <meta property="og:image" content="assets/images/ppdb.jpg">
+    <meta property="og:url" content="https://example.com/programs.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+</head>
+<body class="m-0 p-0 font-sans text-gray-800">
+
+<!-- ===================== NAVBAR ===================== -->
+<nav class="site-navbar">
+
+    <div id="glass-container">
+
+        <!-- ================= DESKTOP (>=1024px) ================= -->
+        <div class="site-navbar__desktop">
+
+            <!-- LEFT -->
+            <ul class="site-navbar__col site-navbar__col--left">
+                <li><a href="index.html" >Beranda</a></li>
+                <li><a href="profil.html" >About Us</a></li>
+                <li><a href="programs.html" class="nav-active">Programs</a></li>
+            </ul>
+
+            <!-- CENTER LOGO -->
+            <a href="index.html" class="site-navbar__logo">
+                <img src="assets/images/Logo.jpg" alt="Logo Yayasan PPLSI">
+                <span class="site-navbar__logo-text">
+                    <strong>Yayasan</strong>
+                    <small>PPLSI</small>
+                </span>
+            </a>
+
+            <!-- RIGHT -->
+            <ul class="site-navbar__col site-navbar__col--right">
+                <li><a href="ppdb.html" >Performance</a></li>
+                <li><a href="berita.html" >Media & Publication</a></li>
+                <li><a href="kontak.html" >Contact</a></li>
+            </ul>
+
+        </div>
+
+        <!-- ================= MOBILE / TABLET (<1024px) ================= -->
+        <div class="site-navbar__mobile-bar">
+
+            <a href="index.html" class="site-navbar__logo site-navbar__logo--sm">
+                <img src="assets/images/Logo.jpg" alt="Logo Yayasan PPLSI">
+                <span class="site-navbar__logo-text">
+                    <strong>Yayasan</strong>
+                    <small>PPLSI</small>
+                </span>
+            </a>
+
+            <button
+                id="nav-toggle"
+                class="site-navbar__toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+                aria-label="Buka menu navigasi">
+
+                <svg id="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+
+                <svg id="close-icon" class="site-navbar__icon--hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M6 6L18 18M18 6L6 18"/>
+                </svg>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- ================= MOBILE DROPDOWN MENU ================= -->
+<div id="mobile-menu" hidden aria-hidden="true">
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">About Us</a>
+    <a href="programs.html">Programs</a>
+    <a href="ppdb.html">Performance</a>
+    <a href="berita.html">Media & Publication</a>
+    <a href="kontak.html">Contact</a>
+</div>
+
+<main>
+
+<section class="relative h-[70vh] flex items-center justify-center text-center">
+    <img src="assets/images/ppdb.jpg" loading="lazy" class="absolute inset-0 w-full h-full object-cover" alt="Unit Layanan Yayasan">
+    <div class="absolute inset-0 bg-[#7c1f1f]/60"></div>
+    <div class="relative z-10 text-white max-w-3xl px-6">
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-5">
+            Unit Layanan &amp; Program Unggulan Yayasan
+        </h1>
+        <p class="text-lg">
+             Yayasan mengelola unit pendidikan terpadu dari tingkat
+            Taman Kanak-Kanak hingga Sekolah Menengah Atas
+            dengan standar mutu, nilai, dan tata kelola yang berkelanjutan.
+        </p>
+    </div>
+</section>
+
+<section class="py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-10">
+            <div class="bg-gray-50 rounded-2xl p-8 shadow hover:shadow-xl transition reveal">
+                <h3 class="text-xl font-semibold text-[#7c1f1f] mb-2">Taman Kanak-Kanak (TK) Modern</h3>
+                <span class="inline-block text-xs font-medium bg-[#7c1f1f]/10 text-[#7c1f1f] px-3 py-1 rounded-full mb-4">Unit Pendidikan Aktif</span>
+                <p class="text-sm text-gray-600 mb-4 leading-relaxed"><strong>Fokus:</strong> Pembelajaran holistik berbasis karakter, kreativitas, literasi awal, dan lingkungan</p>
+                <div class="text-sm text-gray-700 mb-5"><strong>Sasaran Program:</strong><br>Anak usia 4–6 tahun</div>
+                <ul class="space-y-2 text-sm text-gray-700 border-t pt-4">
+                    <li class="flex gap-2"><span class="text-[#7c1f1f]">&bull;</span> Pendampingan Terstruktur</li>
+                    <li class="flex gap-2"><span class="text-[#7c1f1f]">&bull;</span> Kurikulum &amp; Modul Khusus</li>
+                    <li class="flex gap-2"><span class="text-[#7c1f1f]">&bull;</span> Kolaborasi Mentor &amp; Mitra</li>
+                    <li class="flex gap-2"><span class="text-[#7c1f1f]">&bull;</span> Akses Jejaring &amp; Inkubasi</li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl p-8 shadow hover:shadow-xl transition reveal">
+                <h3 class="text-xl font-semibold text-[#7c1f1f] mb-2">Program Mentoring Talenta</h3>
+                <span class="inline-block text-xs font-medium bg-[#7c1f1f]/10 text-[#7c1f1f] px-3 py-1 rounded-full mb-4">Program Pembinaan</span>
+                <p class="text-sm text-gray-600 mb-4 leading-relaxed"><strong>Fokus:</strong> Pendampingan intensif bagi anak dan remaja berprestasi akademik maupun non-akademik</p>
+                <div class="text-sm text-gray-700 mb-5"><strong>Sasaran Program:</strong><br>Pemenang lomba &amp; talenta potensial</div>
+                <ul class="space-y-2 text-sm text-gray-700 border-t pt-4">
+                    <li class="flex gap-2"><span class="text-[#7c1f1f]">&bull;</span> Pendampingan Terstruktur</li>
+                    <li class="flex gap-2"><span class="text-[#7c1f1f]">&bull;</span> Kurikulum &amp; Modul Khusus</li>
+                    <li class="flex gap-2"><span class="text-[#7c1f1f]">&bull;</span> Kolaborasi Mentor &amp; Mitra</li>
+                    <li class="flex gap-2"><span class="text-[#7c1f1f]">&bull;</span> Akses Jejaring &amp; Inkubasi</li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl p-8 shadow hover:shadow-xl transition reveal">
+                <h3 class="text-xl font-semibold text-[#7c1f1f] mb-2">Program Kewirausahaan Muda</h3>
+                <span class="inline-block text-xs font-medium bg-[#7c1f1f]/10 text-[#7c1f1f] px-3 py-1 rounded-full mb-4">Program Pengembangan</span>
+                <p class="text-sm text-gray-600 mb-4 leading-relaxed"><strong>Fokus:</strong> Pengembangan jiwa wirausaha, kepemimpinan, dan problem solving berbasis sosial</p>
+                <div class="text-sm text-gray-700 mb-5"><strong>Sasaran Program:</strong><br>Remaja &amp; pemuda</div>
+                <ul class="space-y-2 text-sm text-gray-700 border-t pt-4">
+                    <li class="flex gap-2"><span class="text-[#7c1f1f]">&bull;</span> Pendampingan Terstruktur</li>
+                    <li class="flex gap-2"><span class="text-[#7c1f1f]">&bull;</span> Kurikulum &amp; Modul Khusus</li>
+                    <li class="flex gap-2"><span class="text-[#7c1f1f]">&bull;</span> Kolaborasi Mentor &amp; Mitra</li>
+                    <li class="flex gap-2"><span class="text-[#7c1f1f]">&bull;</span> Akses Jejaring &amp; Inkubasi</li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl p-8 shadow hover:shadow-xl transition reveal">
+                <h3 class="text-xl font-semibold text-[#7c1f1f] mb-2">Program Inkubasi Prestasi &amp; Inovasi</h3>
+                <span class="inline-block text-xs font-medium bg-[#7c1f1f]/10 text-[#7c1f1f] px-3 py-1 rounded-full mb-4">Program Strategis</span>
+                <p class="text-sm text-gray-600 mb-4 leading-relaxed"><strong>Fokus:</strong> Inkubasi lanjutan bagi peserta berprestasi untuk dikembangkan ke level regional dan nasional</p>
+                <div class="text-sm text-gray-700 mb-5"><strong>Sasaran Program:</strong><br>Juara lomba &amp; inovator muda</div>
+                <ul class="space-y-2 text-sm text-gray-700 border-t pt-4">
+                    <li class="flex gap-2"><span class="text-[#7c1f1f]">&bull;</span> Pendampingan Terstruktur</li>
+                    <li class="flex gap-2"><span class="text-[#7c1f1f]">&bull;</span> Kurikulum &amp; Modul Khusus</li>
+                    <li class="flex gap-2"><span class="text-[#7c1f1f]">&bull;</span> Kolaborasi Mentor &amp; Mitra</li>
+                    <li class="flex gap-2"><span class="text-[#7c1f1f]">&bull;</span> Akses Jejaring &amp; Inkubasi</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-28 bg-[#7c1f1f] text-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20 reveal">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Program Inti Yayasan</h2>
+            <p class="max-w-3xl mx-auto text-white/90 leading-relaxed">
+                Program yayasan dikembangkan secara tematik dan terintegrasi
+                untuk menjawab tantangan pendidikan, lingkungan, energi,
+                dan sosial masyarakat secara berkelanjutan.
+            </p>
+        </div>
+        <div class="grid md:grid-cols-5 gap-10">
+            <div class="bg-white text-gray-800 rounded-2xl p-8 shadow-xl reveal">
+                <div class="flex justify-center mb-4">
+                    <svg class="w-12 h-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Energi</h3>
+                <p class="text-sm leading-relaxed">Memastikan akses energi ramah lingkungan, efisien, dan terjangkau melalui inovasi energi terbarukan berbasis komunitas.</p>
+            </div>
+            <div class="bg-white text-gray-800 rounded-2xl p-8 shadow-xl reveal">
+                <div class="flex justify-center mb-4">
+                    <svg class="w-12 h-12 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 2C7 7 6 12 6 15a6 6 0 0012 0c0-3-1-8-6-13z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Lingkungan</h3>
+                <p class="text-sm leading-relaxed">Terlibat aktif dalam penanganan perubahan iklim untuk menjaga kelestarian lingkungan hidup dan keberlanjutan bumi.</p>
+            </div>
+            <div class="bg-white text-gray-800 rounded-2xl p-8 shadow-xl reveal">
+                <div class="flex justify-center mb-4">
+                    <svg class="w-12 h-12 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z"/>
+                        <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422A12 12 0 0112 21a12 12 0 01-6.16-10.422L12 14z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Pendidikan</h3>
+                <p class="text-sm leading-relaxed">Berpartisipasi dalam pengembangan pendidikan yang merata, berkualitas, dan berorientasi pada pemecahan masalah nyata.</p>
+            </div>
+            <div class="bg-white text-gray-800 rounded-2xl p-8 shadow-xl reveal">
+                <div class="flex justify-center mb-4">
+                    <svg class="w-12 h-12 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-4-4h-1M9 20H4v-2a4 4 0 014-4h1 M12 12a4 4 0 100-8 4 4 0 000 8z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Sosial</h3>
+                <p class="text-sm leading-relaxed">Pemberdayaan sosial untuk mewujudkan kemandirian dan kesejahteraan masyarakat secara inklusif.</p>
+            </div>
+            <div class="bg-white text-gray-800 rounded-2xl p-8 shadow-xl reveal">
+                <div class="flex justify-center mb-4">
+                    <svg class="w-12 h-12 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v18m-7-7h14M5 7l2-2m12 2l-2-2"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Kesetaraan</h3>
+                <p class="text-sm leading-relaxed">Memperhatikan isu kesetaraan gender serta pemberdayaan kelompok masyarakat marginal dan difabel.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-28 bg-gradient-to-b from-white to-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20 reveal">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#7c1f1f] mb-4">Fasilitas Pendukung Pembelajaran</h2>
+            <p class="text-gray-600 max-w-3xl mx-auto">
+                Dirancang khusus untuk menciptakan lingkungan belajar
+                yang aman, menyenangkan, dan merangsang kreativitas anak.
+            </p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="group bg-white rounded-3xl overflow-hidden shadow hover:shadow-2xl transition duration-500 reveal">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="assets/images/fasilitas/kelas.jpg" loading="lazy"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Ruang Kelas Interaktif">
+                    <div class="absolute inset-0 bg-black/10"></div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-xl bg-[#7c1f1f]/10 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#7c1f1f]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.5c-2.28 0-4.42-.64-6.16-1.922L12 14z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-[#7c1f1f]">Ruang Kelas Interaktif</h3>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">Kelas tematik, visual cerah, dan ramah anak.</p>
+                </div>
+            </div>
+
+            <div class="group bg-white rounded-3xl overflow-hidden shadow hover:shadow-2xl transition duration-500 reveal">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="assets/images/fasilitas/playground.jpg" loading="lazy"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Area Bermain Outdoor">
+                    <div class="absolute inset-0 bg-black/10"></div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-xl bg-[#7c1f1f]/10 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#7c1f1f]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.5c-2.28 0-4.42-.64-6.16-1.922L12 14z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-[#7c1f1f]">Area Bermain Outdoor</h3>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">Playground aman untuk motorik dan kerja sama.</p>
+                </div>
+            </div>
+
+            <div class="group bg-white rounded-3xl overflow-hidden shadow hover:shadow-2xl transition duration-500 reveal">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="assets/images/fasilitas/perpustakaan.jpg" loading="lazy"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Perpustakaan Anak">
+                    <div class="absolute inset-0 bg-black/10"></div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-xl bg-[#7c1f1f]/10 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#7c1f1f]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.5c-2.28 0-4.42-.64-6.16-1.922L12 14z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-[#7c1f1f]">Perpustakaan Anak</h3>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">Buku cerita edukatif dan pojok baca nyaman.</p>
+                </div>
+            </div>
+
+            <div class="group bg-white rounded-3xl overflow-hidden shadow hover:shadow-2xl transition duration-500 reveal">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="assets/images/fasilitas/kebun.jpg" loading="lazy"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Kebun Edukasi">
+                    <div class="absolute inset-0 bg-black/10"></div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-xl bg-[#7c1f1f]/10 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#7c1f1f]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.5c-2.28 0-4.42-.64-6.16-1.922L12 14z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-[#7c1f1f]">Kebun Edukasi</h3>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">Belajar alam melalui menanam &amp; merawat.</p>
+                </div>
+            </div>
+
+            <div class="group bg-white rounded-3xl overflow-hidden shadow hover:shadow-2xl transition duration-500 reveal">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="assets/images/fasilitas/ruang-kreatif.jpg" loading="lazy"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Ruang Kreativitas">
+                    <div class="absolute inset-0 bg-black/10"></div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-xl bg-[#7c1f1f]/10 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#7c1f1f]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.5c-2.28 0-4.42-.64-6.16-1.922L12 14z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-[#7c1f1f]">Ruang Kreativitas</h3>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">Seni, musik, dan aktivitas eksploratif.</p>
+                </div>
+            </div>
+
+            <div class="group bg-white rounded-3xl overflow-hidden shadow hover:shadow-2xl transition duration-500 reveal">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="assets/images/fasilitas/ruang-konsultasi.jpg" loading="lazy"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Ruang Konsultasi Orang Tua">
+                    <div class="absolute inset-0 bg-black/10"></div>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-xl bg-[#7c1f1f]/10 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#7c1f1f]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.5c-2.28 0-4.42-.64-6.16-1.922L12 14z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-[#7c1f1f]">Ruang Konsultasi Orang Tua</h3>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">Diskusi perkembangan anak bersama mentor.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16 reveal">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#7c1f1f] mb-4">Suasana &amp; Aktivitas Anak</h2>
+            <p class="text-gray-600 max-w-3xl mx-auto">
+                Cuplikan aktivitas nyata yang mencerminkan suasana belajar
+                yang aktif, ceria, dan penuh perhatian.
+            </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="group rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition reveal">
+                <div class="relative">
+                    <img src="assets/images/video-poster/kelas.jpg" loading="lazy" class="w-full h-64 object-cover" alt="Kegiatan Belajar Interaktif">
+                    <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+                        <span class="bg-white/90 text-[#7c1f1f] px-4 py-2 rounded-full text-sm font-semibold">Video Segera Hadir</span>
+                    </div>
+                </div>
+                <div class="p-5 bg-white text-center">
+                    <h4 class="font-semibold text-gray-800">Kegiatan Belajar Interaktif</h4>
+                </div>
+            </div>
+
+            <div class="group rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition reveal">
+                <div class="relative">
+                    <img src="assets/images/video-poster/bermain.jpg" loading="lazy" class="w-full h-64 object-cover" alt="Aktivitas Bermain &amp; Motorik">
+                    <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+                        <span class="bg-white/90 text-[#7c1f1f] px-4 py-2 rounded-full text-sm font-semibold">Video Segera Hadir</span>
+                    </div>
+                </div>
+                <div class="p-5 bg-white text-center">
+                    <h4 class="font-semibold text-gray-800">Aktivitas Bermain &amp; Motorik</h4>
+                </div>
+            </div>
+
+            <div class="group rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition reveal">
+                <div class="relative">
+                    <img src="assets/images/video-poster/kreativitas.jpg" loading="lazy" class="w-full h-64 object-cover" alt="Kreativitas &amp; Seni Anak">
+                    <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+                        <span class="bg-white/90 text-[#7c1f1f] px-4 py-2 rounded-full text-sm font-semibold">Video Segera Hadir</span>
+                    </div>
+                </div>
+                <div class="p-5 bg-white text-center">
+                    <h4 class="font-semibold text-gray-800">Kreativitas &amp; Seni Anak</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-32 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20 reveal">
+            <h2 class="text-3xl md:text-5xl font-bold text-[#7c1f1f] mb-6">Program Unggulan Berbasis Karya &amp; Inovasi</h2>
+            <p class="text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                Yayasan mengembangkan program pembelajaran berbasis proyek nyata
+                untuk membentuk peserta didik yang kreatif, solutif, dan adaptif
+                terhadap tantangan masa depan. Setiap program dirancang agar anak
+                tidak hanya memahami teori, tetapi mampu mencipta, bereksperimen,
+                dan menghasilkan karya yang berdampak.
+            </p>
+        </div>
+
+        <div class="space-y-24">
+            <div class="grid md:grid-cols-2 gap-14 items-center reveal">
+                <img src="assets/images/program/sabun-herbal.jpg" loading="lazy" class="rounded-3xl shadow-xl w-full h-[360px] object-cover" alt="Program Sabun Arang Bambu">
+                <div>
+                    <h3 class="text-3xl font-bold text-[#7c1f1f] mb-5">Program Sabun Arang Bambu</h3>
+                    <p class="text-gray-700 leading-relaxed mb-5">
+                        Program ini dirancang untuk memperkenalkan peserta didik
+                        pada pemanfaatan sumber daya alam secara bijak melalui
+                        pembuatan sabun herbal berbahan tumbuhan lokal.
+                        Anak belajar bahwa sains, kesehatan, dan lingkungan
+                        dapat diolah menjadi produk yang bernilai guna dan bernilai ekonomi.
+                    </p>
+                    <ul class="space-y-3 text-gray-700 mb-6">
+                        <li>&bull; Pengenalan sifat tanaman dan bahan alami</li>
+                        <li>&bull; Proses pembuatan sabun secara aman dan higienis</li>
+                        <li>&bull; Pengujian kualitas dan kemasan produk</li>
+                        <li>&bull; Edukasi kewirausahaan dan pemasaran sederhana</li>
+                    </ul>
+                    <div class="text-sm text-gray-600">
+                        <strong>Output:</strong> Produk sabun herbal siap pakai dan pameran karya siswa<br>
+                        <strong>Nilai Unggul:</strong> Sains terapan &bull; Lingkungan &bull; Kewirausahaan dini
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-14 items-center reveal">
+                <div class="md:order-2">
+                    <img src="assets/images/program/briket.jpg" loading="lazy" class="rounded-3xl shadow-xl w-full h-[360px] object-cover" alt="Program Energi Terbarukan dan Briket">
+                </div>
+                <div class="md:order-1">
+                    <h3 class="text-3xl font-bold text-[#7c1f1f] mb-5">Program Energi Terbarukan &amp; Briket Ramah Lingkungan</h3>
+                    <p class="text-gray-700 leading-relaxed mb-5">
+                        Melalui program ini, peserta didik diajak memahami
+                        tantangan energi dan lingkungan melalui praktik langsung
+                        mengolah limbah organik menjadi briket sebagai sumber energi alternatif.
+                        Anak dilatih berpikir kritis terhadap permasalahan global
+                        dan mencari solusi berbasis lingkungan sekitar.
+                    </p>
+                    <ul class="space-y-3 text-gray-700 mb-6">
+                        <li>&bull; Pemahaman konsep energi dan limbah</li>
+                        <li>&bull; Proses pembuatan briket dari bahan organik</li>
+                        <li>&bull; Uji efisiensi dan daya bakar</li>
+                        <li>&bull; Diskusi dampak lingkungan dan keberlanjutan</li>
+                    </ul>
+                    <div class="text-sm text-gray-600">
+                        <strong>Output:</strong> Briket hasil karya siswa &amp; laporan proyek<br>
+                        <strong>Nilai Unggul:</strong> Green education &bull; Problem solving &bull; Kesadaran global
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-14 items-center reveal">
+                <img src="assets/images/program/iot.jpg" loading="lazy" class="rounded-3xl shadow-xl w-full h-[360px] object-cover" alt="Program Teknologi dan IoT">
+                <div>
+                    <h3 class="text-3xl font-bold text-[#7c1f1f] mb-5">Program Teknologi &amp; Internet of Things (IoT)</h3>
+                    <p class="text-gray-700 leading-relaxed mb-5">
+                        Program IoT memperkenalkan peserta didik pada dunia teknologi
+                        dan pemrograman melalui proyek nyata yang relevan dengan kehidupan sehari-hari.
+                        Anak tidak hanya menjadi pengguna teknologi,
+                        tetapi dibimbing untuk memahami cara kerja dan menciptakannya.
+                    </p>
+                    <ul class="space-y-3 text-gray-700 mb-6">
+                        <li>&bull; Logika dasar pemrograman dan sensor</li>
+                        <li>&bull; Perakitan alat IoT sederhana</li>
+                        <li>&bull; Automasi dan pengolahan data</li>
+                        <li>&bull; Presentasi dan demonstrasi proyek</li>
+                    </ul>
+                    <div class="text-sm text-gray-600">
+                        <strong>Output:</strong> Proyek IoT fungsional sesuai jenjang<br>
+                        <strong>Nilai Unggul:</strong> Teknologi masa depan &bull; Computational thinking
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16 reveal">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#7c1f1f] mb-4">Profil Lulusan yang Diharapkan</h2>
+            <p class="text-gray-600 max-w-3xl mx-auto">
+                Profil lulusan berikut mencerminkan nilai dan arah pembinaan
+                yang dikembangkan yayasan melalui lembaga pendidikan
+                yang dikelola. Melalui pembelajaran holistik dan lingkungan yang mendukung,
+                peserta didik SDN Balas Klumprik tumbuh menjadi pribadi yang utuh,
+                mandiri, dan berintegritas.
+            </p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="reveal">
+                <h3 class="text-xl font-semibold mb-3">Pembelajar Tangguh</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Peserta didik memiliki rasa ingin tahu tinggi, mampu berpikir kritis,
+                    bekerja sama, dan bertanggung jawab dalam proses belajar.
+                    Mereka siap menjadi pembelajar sepanjang hayat.
+                </p>
+            </div>
+            <div class="reveal">
+                <h3 class="text-xl font-semibold mb-3">Pemikir Kritis</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Peserta didik dibimbing untuk memiliki kejujuran, integritas,
+                    serta kemampuan membedakan yang benar dan salah
+                    berdasarkan nilai moral dan kebangsaan.
+                </p>
+            </div>
+            <div class="reveal">
+                <h3 class="text-xl font-semibold mb-3">Agen Perubahan</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Dengan sikap saling menghormati dan empati,
+                    peserta didik tumbuh menjadi individu yang peduli,
+                    beretika, dan mampu memberi dampak positif di lingkungannya.
+                </p>
+            </div>
+            <div class="reveal">
+                <h3 class="text-xl font-semibold mb-3">Komunikator Percaya Diri</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Peserta didik mampu menyampaikan gagasan secara santun,
+                    mendengarkan pendapat orang lain,
+                    dan berkomunikasi efektif dalam berbagai situasi.
+                </p>
+            </div>
+            <div class="reveal">
+                <h3 class="text-xl font-semibold mb-3">Pemimpin Berkarakter</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Peserta didik dilatih untuk mengambil inisiatif,
+                    bertanggung jawab, dan memimpin dengan keteladanan
+                    serta semangat gotong royong.
+                </p>
+            </div>
+            <div class="reveal">
+                <h3 class="text-xl font-semibold mb-3">Pribadi Berakhlak Mulia</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Peserta didik berkembang menjadi pribadi yang disiplin,
+                    tangguh, dan berakhlak mulia,
+                    siap menghadapi tantangan masa depan dengan sikap positif.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+    <footer class="relative text-gray-200">
+        <div class="bg-gradient-to-t from-[#5a1414] to-[#7c1f1f] pt-14 pb-10">
+            <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+
+                <!-- PROFIL -->
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-3">
+                        Yayasan PPLSI
+                    </h4>
+                    <p class="text-sm leading-relaxed text-gray-200">
+                        Yayasan Pendidikan Peduli Lingkungan dan Sosial Indonesia — berkomitmen
+                        pada pendidikan berkualitas, berkarakter, dan berlandaskan kearifan lokal.
+                    </p>
+                    <div class="mt-4 text-sm space-y-1 opacity-90">
+                        <p>Desa Slempit, Kec. Kedamean, Kab. Gresik, Jawa Timur</p>
+                        <p>(031) 7671224</p>
+                        <p>info@yayasanpplsi.or.id</p>
+                    </div>
+                </div>
+
+                <!-- MENU -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-3">Navigasi</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-white transition">Beranda</a></li>
+                        <li><a href="profil.html" class="hover:text-white transition">Profil Yayasan</a></li>
+                        <li><a href="programs.html" class="hover:text-white transition">Programs</a></li>
+                        <li><a href="ppdb.html" class="hover:text-white transition">Rekam Prestasi</a></li>
+                        <li><a href="berita.html" class="hover:text-white transition">Berita & Publikasi</a></li>
+                        <li><a href="kontak.html" class="hover:text-white transition">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <!-- INFO -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-3">Informasi</h4>
+                    <div class="text-sm space-y-2">
+                        <p>Jam Operasional:</p>
+                        <p class="opacity-90">Senin – Jumat<br>07.00 – 16.00 WIB</p>
+                    </div>
+                    <div class="flex space-x-4 mt-5 text-sm">
+                        <a href="#" class="hover:text-white transition">Facebook</a>
+                        <a href="#" class="hover:text-white transition">Instagram</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 border-t border-white/20 pt-4 text-center text-xs text-gray-300">
+                <span id="copyright-year">&copy; 2026</span> Yayasan Pendidikan Peduli Lingkungan dan Sosial Indonesia (PPLSI). Seluruh hak cipta dilindungi.
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
