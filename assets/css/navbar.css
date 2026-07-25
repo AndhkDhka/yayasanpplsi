@@ -220,6 +220,46 @@
   #glass-container { transition: none; }
 }
 
+/* ---------- Mobile-only compaction (<=767px) ---------- */
+@media (max-width: 767px) {
+  :root {
+    --nav-height: 60px;
+    --nav-offset-top: 10px;
+  }
+
+  .site-navbar__logo--sm img {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+  }
+
+  .site-navbar__logo--sm .site-navbar__logo-text strong {
+    font-size: 1rem;
+  }
+
+  .site-navbar__logo--sm .site-navbar__logo-text small {
+    font-size: .65rem;
+  }
+
+  .site-navbar__toggle {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .site-navbar__toggle svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  #mobile-menu {
+    top: calc(var(--nav-offset-top) + var(--nav-height) + 8px);
+  }
+
+  #mobile-menu a {
+    padding: 12px 20px;
+  }
+}
+
 /* ---------- Breakpoint: swap bar layouts at 1024px ---------- */
 @media (min-width: 1024px) {
   .site-navbar__desktop {
